@@ -65,7 +65,7 @@ class Task(ft.UserControl):
 
     def delete_clicked(self, e):
         self.task_delete(self)
-
+    
 
 #clase que construye la logica de la app Todo
 class TodoApp(ft.UserControl):
