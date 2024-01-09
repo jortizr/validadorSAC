@@ -1,9 +1,17 @@
 import flet as ft
 
 
+
+
+
 def main(page: ft.Page):
-    def validarStatus(e):
-        page.add()
-    page.add(ft.Text(value="Hello, world!"))
+    interfaz = ft.Row(
+        controls=[
+            ft.TextField(label="ingresa la guia"),
+            
+        ]
+    )
+        
+    page.add(interfaz)
 
 ft.app(target=main)
