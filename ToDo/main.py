@@ -92,6 +92,7 @@ class TodoApp(ft.UserControl):
 
         # application's root control (i.e. "view") containing all other controls
         return ft.Column(
+            margin=5,
             width=600,
             controls=[
                 ft.Row(
@@ -117,7 +118,7 @@ class TodoApp(ft.UserControl):
                             controls=[
                                 self.items_left,
                                 ft.OutlinedButton(
-                                    text="Clear completed", on_click=self.clear_clicked
+                                    text="Eliminar completados", on_click=self.clear_clicked
                                 ),
                             ],
                         ),
@@ -164,8 +165,12 @@ class TodoApp(ft.UserControl):
         await super().update_async()
 
 
+
+
+##estructura main
 async def main(page: ft.Page):
     page.title = "ToDo App"
+    page.top=25
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.scroll = ft.ScrollMode.ADAPTIVE
 
