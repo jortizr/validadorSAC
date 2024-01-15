@@ -93,10 +93,8 @@ class TodoApp(ft.UserControl):
 
         # application's root control (i.e. "view") containing all other controls
         return ft.Column(
-            
-            width=600,
+            width=400,
             top=30,
-            offset=ft.transform.Offset(-1, -1),
             controls=[
                 ft.Row(
                     [ ft.Text(value="Todos", style=ft.TextThemeStyle.HEADLINE_MEDIUM)],
@@ -169,7 +167,7 @@ class TodoApp(ft.UserControl):
 
 
 async def main(page: ft.Page):
-    page.title = "ToDo App"
+    page.title = "Validador de estado SAC"
     page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
     page.scroll = ft.ScrollMode.ADAPTIVE
 
