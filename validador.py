@@ -33,6 +33,7 @@ class InterfazApp(ft.UserControl):
         )
         #creo una columna para visualizar el estado
         self.estado = ft.Column()
+        self.label_estado = ft.Text("Estado:",  size=16, color="white", weight=ft.FontWeight.BOLD)
         
         #devuelve de la funcion el control con los componentes creados en la interfaz
         return ft.Column(
@@ -55,15 +56,20 @@ class InterfazApp(ft.UserControl):
                         )
                     ]
                 ),
+                ft.Divider(height=2, color="white"),
                 ft.Column(
                     spacing=25,
                     controls=[
                         self.estado,
                         ft.Row(
-                            alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
-                            vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                            # alignment=ft.MainAxisAlignment.SPACE_BETWEEN,
+                            # vertical_alignment=ft.CrossAxisAlignment.CENTER,
+                            [ft.Text("Estado: " ,  size=16, color="white", weight=ft.FontWeight.BOLD)],
                             
-                        )
+                            
+                        ),
+                        ft.Divider(height=1)
+                        
                     ]
                 )
             ]
