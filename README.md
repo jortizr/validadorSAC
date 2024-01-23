@@ -9,3 +9,7 @@ pip install flet
 
 #crear el archivo de requerimientos
 pip freeze > requirements.txt 
+
+#instalacion para acceder a la url
+pip install requests
+pip install beautifulsoup4
